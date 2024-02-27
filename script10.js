@@ -1,100 +1,84 @@
 
-// lexical scope 
+let animals = ["lion","zebra","deer","harin","tiger","elephant","chuha"]
+//push
+let a = animals.push("hippopotamus")
+console.log(a)
+console.log(animals)
+//unshift
+let a1 = animals.unshift('chetan')
+console.log(a1)
+console.log(animals)
+//pop
+let a2 = animals.pop()
+console.log(a2)
+console.log(animals)
+//shift
+let a3 = animals.shift()
+console.log(a3)
+console.log(animals)
+// indexOf()
+let a4  = animals.indexOf('tiger')
+console.log(a4)
+console.log(animals)
+// includes()
+let a5 = animals.includes('deer')
+console.log(a5)
+console.log(animals)
+// reverser()
+let a6 = animals.reverse()
+console.log(animals)
+console.log(a6)
+// at()
+let a7 = animals.at(2)
+console.log(a7)
+// concat()
+let animal = ["tiger","lion","mungoose"]
+let birds = ["peacock","eagle","sparrow"]
+let a8 =  animal.concat(birds)
+console.log(a8)
 
-function additionA(){
-    let a = 10 
-    let b = 5
-    console.log(a+b)
-    function additionB(){
-        let x = 1
-        let y = 2
-        console.log(a+b+x+y)
-        //console.log(h)
-        function additionC(){
-            let g = 10 
-            let h = 4
-            console.log(a+b+x+y)
-            console.log(g + h)
-        }
-        additionC()
+// join()
+let info  = ["01saiprasad","gmail.com"]
+let a9 = info.join('@')
+console.log(a9)
+
+//===
+
+let birthYear  = [1985,1852,1988,1585]
+let ages = [] 
+
+for(let i = 0 ; i < birthYear.length ; i++){
+    let y = 2024 - birthYear[i]
+    ages.push(y)
+}
+console.log(ages)
+
+
+//===
+let marks = [85,45,89,15,82,64,39]
+let above40 = []
+
+for(let i = 0 ; i < marks.length ; i++){
+    
+    if(marks[i] > 50){
+        above40.push(marks[i])
     }
-    additionB()
 }
-additionA()
+console.log(above40)
 
+//====
 
-// function declaration 
-function additionBa(x,y){
-    return x + y
+let numbers = [7,9,10] // 66
+let sum = 0
+for(let i = 0 ; i < numbers.length ; i++){
+    sum = sum + numbers[i]
 }
-let q1  = additionBa(13,4)
-console.log(q1)
+console.log(sum)
 
-// function express 
-
-let additionB = function(x,y){
-    return x + y
-}
-let q2  = additionB(13,4)
-console.log(q2)
-
-// arrow function 
-
-let additionC = (x,y)=>{
-    return x + y
-}
-let q3  = additionC(13,4)
-console.log(q3)
-
-// closures 
-
-let add = function(x,y){
-    return x + y
+//====
+let cities  =["nagpur","mumbai","banglore","kolkata"]
+for(let i = 0 ; i < cities.length ; i++){
+    console.log("welcome to "+cities[i])
 }
 
-function additionD(fn,x,y){
-
-    // let fn  = function(x,y){
-    //     return x + y
-    // }
-
-    let c = fn(x,y)
-    return c
-}
-let d = additionD(add,34,5)
-console.log(d)
-
-// closures 
-
-// function additionN(a,b){
-//     return function(){
-//         console.log(a+b)
-//     }
-// }
-// let e = additionN(12,4)
-// console.log(e)
-// // let e = function(){
-// //     console.log(a+b)
-// // }
-// e()
-
-
-
-function info(){
-    let firstName = "chinmay"
-    let lastName = "deshpande"
-
-    let displayName = function(){
-        console.log( firstName + lastName)
-    }
-    let updateFirstName = function(newVal){
-        firstName = newVal
-    }
-    return [displayName,updateFirstName,firstName]
-}
-let [a,b,c] = info()
-a()
-b("ram")
-a()
-console.log(c)
 

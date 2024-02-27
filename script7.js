@@ -1,82 +1,78 @@
-// class Calculator {
-//     // addition(x,y){
-//     //     console.log(x+y)
-//     // }
-//     // addition(x,y,z){
-//     //     console.log(x+y+z)
-//     // }
-    
-//     // addition(x,y,z,a){
-//     //     console.log(x+y+z+a)
-//     // }
 
-//     addition(x,y,z,a){
-//         if(x != undefined && y != undefined && z != undefined && a != undefined){
-//             console.log(x+y+z+a)
-//         }
-//         else if(x != undefined && y != undefined && z != undefined){
-//             console.log(x+y+z)
-//         }
-//         else if(x != undefined && y != undefined) {
-//             console.log(x+y)
-//         }
-//     }
-
-// }
-
-// let a = new Calculator()
-// a.addition(12,4)
-// a.addition(12,4,3)
-// a.addition(12,4,3,5)
-
-
-class WorlBank {
-    save(){
-        console.log("I am save from worldbank")
-    }
-    loan(){
-        console.log("I am loan from worldbank")
-    }
+// program 1
+for(let i = 1 ; i <= 3 ; i++){ 
+    console.log(i) //123
 }
 
-class SBI extends WorlBank{
+// program 2
 
-    displayBranch(){
-        console.log("pune branch")
-    }
-
-    save(){
-        console.log("I am save from SBI")
-    }
-    loan(){
-        console.log("I am loan from SBI")
-    }
-}
-
-class PNB extends WorlBank{
-
-    displayBranch(){
-        console.log("nagpur branch")
-    }
-
-    save(){
-        console.log("I am save from PNB")
-    }
-    loan(){
-        console.log("I am loan from PNB")
-    }
+for(let i = 1 ; i <= 5 ; i++){
+    console.log(i) //12345
 }
 
 
-let sbi = new SBI()
-sbi.loan()
-sbi.save()
-sbi.displayBranch()
+// program 3 
+//print 3 times
+for(let i = 1 ; i <= 3 ; i++){
+    console.log("hello")
+    console.log("bye")
+}
 
-let pnb = new PNB()
-pnb.loan()
-pnb.save()
-pnb.displayBranch()
+// program 4
+// table of 2
+for(let i = 2 ; i <= 20 ; i= i+2){
+    console.log(i)
+}
+
+// program 5
+//tBLE of 5 in reverse
+for(let i = 50 ; i >= 5 ; i = i - 5){
+    console.log(i)
+}
+
+// program 6 
+// break 
+
+for(let i = 1 ; i <= 5 ; i++){ 
+    if(i == 3){
+        break
+    }
+    console.log(i) // 12
+}
+
+// program 7
+for(let i = 1 ; i <= 5 ; i++){ 
+    console.log(i)  //123
+    if(i == 3){
+        break
+    }
+}
+
+// program 8
+for(let i = 5 ; i >= 1 ; i--){ 
+    if(i == 3){
+        break
+    }
+    console.log(i) //54
+}
+
+// program 9
+// continue
+
+for(let i = 1 ; i <= 5 ; i++){
+    if(i == 3){
+        continue
+    }
+   console.log(i) //skip3
+}
+
+//program 10
+for(let i = 5 ; i >= 1 ; i--){ 
+    if(i == 2){
+        continue
+    } 
+    console.log(i) //5-1
+}
 
 
 

@@ -1,95 +1,116 @@
-// // program 1
-// class Student {
-//     firstName = "chinmay"
-//     lastName = "deshpande"
-//     adharNo = 123
+// let x = 155
+// let y = 58
+// console.log(x)
+// console.log(y)
+// console.log(typeof x)
 
-//     displayName(){
-//         console.log(this.firstName + this.lastName)
-//     }
+// let x1 = '5'
+// console.log(typeof z)/
+
+// let x = true
+// console.log(typeof x)
+
+// if (5 == 5) {
+//     console.log('hello')
+// }
+// else {
+//     console.log('bye')
 // }
 
-// class Teacher {
-//     firstName = "chinmay"
-//     lastName = "deshpande"
-//     adharNo = 123
-//     salary = 10000
+// let x = 90
+// let y = 60
 
-//     displayName(){
-//         console.log(this.firstName + this.lastName)
-//     }
-//     displaySalary(){
-//         console.log(this.salary)
-//     }
+// // if (x > y) {
+// //     console.log('x is greater')
+// // }
+// // else {
+// //     console.log('y is greater')
+// // }
+
+// //ternary opeartor
+// //condition ? true: false
+
+// x > y ? console.log('x is greater') : console.log('y is greater')
+
+// //problem 2
+
+// let age = 14
+// let result = age > 18 ? 'speed up' : "dont drive"
+// console.log(result)
+
+
+//switch case
+
+//problem 1
+
+//switch case without break
+// let city = "nagpur"
+// switch (city) {
+//     case "Pune":
+//         console.log("MH")
+
+//     case "Jaipur":
+//         console.log("RJ")
+
+//     case "Raipur":
+//         console.log("CG")
+
+//     default:
+//         console.log('city not found')
 // }
 
+//switch case with break
 
-// let amol = new Teacher()
-// console.log(amol.firstName)
-// console.log(amol.lastName)
-// console.log(amol.salary)
-// console.log(amol.adharNo)
-
-// amol.displayName()
-// amol.displaySalary()
-
-
-// let chinmay = new Student()
-// console.log(chinmay.firstName)
-// console.log(chinmay.lastName)
-// console.log(chinmay.adharNo)
-
-// program 2
-// class Student {
-//     firstName = "chinmay"
-//     lastName = "deshpande"
-//     adharNo = 123
-
-//     displayName(){
-//         console.log(this.firstName + this.lastName)
-//     }
+// let city = "Pune"
+// switch (city) {
+//     case "Pune":
+//         console.log("MH")
+//         break
+//     case "Chennai":
+//         console.log("TN")
+//         break
+//     case "Indore":
+//         console.log("MP")
+//         break
+//     default:
+//         console.log('city not found')
 // }
 
-// class Teacher extends Student {
-//     salary = 10000
-//     displaySalary(){
-//         console.log(this.salary)
-//     }
+// let city = "Lukhnow"
+// switch (city) {
+//     case "Nagpur":
+//     case "Pune":
+//         console.log("MH")
+//         break
+//     case "Lukhnow":
+//     case "Varanasi":
+//         console.log("UP")
+//         break
+//     case "Jaipur":
+//     case "Udaipur":
+//         console.log("RJ")
+//         break
+//     default:
+//         console.log('City not found')
 // }
 
-// let amolB = new Teacher()
-// console.log(amolB.firstName)
-// console.log(amolB.lastName)
-// console.log(amolB.adharNo)
-// console.log(amolB.salary)
-// amolB.displayName()
-// amolB.displaySalary()
+// 
 
-// program 3
 
-class Student {
-    constructor(fn,ln,adharNo){
-        this.firstName = fn 
-        this.lastName = ln 
-        this.adharNo = adharNo
-    }
-    displayName(){
-        console.log(this.firstName + this.lastName)
-    }
 
+let x = 87
+let y = 54
+let z = 67
+
+switch (true) {
+    case x > y && x > z:
+        console.log('x is greater')
+        break
+
+    case y > x && y > z:
+        console.log("y is greater")
+        break
+
+    default:
+        console.log("z is greater")
 }
-
-class Teacher extends Student {
-    salary = 1000
-    displaySalary(){
-        console.log(this.salary)
-    }
-}
-
-let chinmay = new Teacher("chinmay s ","deshpande",123213)
-console.log(chinmay.firstName)
-console.log(chinmay.lastName)
-console.log(chinmay.adharNo)
-console.log(chinmay.salary)
-chinmay.displayName()
-chinmay.displaySalary()

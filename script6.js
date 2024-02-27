@@ -1,128 +1,106 @@
-// single inheritance 
 
-// class Student {
-//     constructor(fn,ln,age){
-//         this.firstName = fn 
-//         this.lastName = ln 
-//         this.age = age
-//     }
-//     displayName(){
-//         console.log(this.firstName + this.lastName)
-//     }
-// }
-// class Teacher extends Student {
-//     constructor(fn,ln,age,salary){
-//         super(fn,ln,age)
-//         this.salary = salary
-//     }
-//     displaySalary(){
-//         console.log(this.salary)
-//     }
-// }
-// let amol = new Teacher("chinmay","deshpande",34,55)
-// console.log(amol.age)
-// console.log(amol.firstName)
-// console.logo(amol.lastName)
-// console.log(amol.salary)
-// amol.displayName()
-// amol.displaySalary()
+let city  = "pune"
 
+switch(city){
 
-// program 2 multi-level
-class Grandfather {
-
-    constructor(fn,ln){
-        this.firstName = fn 
-        this.lastName  = ln 
-    }
-
-    displayGname(){
-        console.log(this.firstName + this.lastName)
-    }
-
+    case "pune":
+        console.log("MH")
+    case "jaipur":
+        console.log("RJ")
+    case "banglore":
+        console.log("KA")
+    default:
+        console.log('Incorrect cityName')
 }
 
-class Father extends Grandfather {
-    constructor(fn,ln,ffn){
-        super(fn,ln)
-        this.fname = ffn
-    }
-    displayFname(){
-        console.log(this.fname + this.lastName)
-    }
-}
-class Son extends Father {
-    constructor(fn,ln,ffn,ssn){
-        super(fn,ln,ffn)
-        this.sname  = ssn
-    }
-    displaySname(){
-        console.log(this.sname + this.lastName)
-    }
+let city1  = "pune"
+switch(city1){
+    case "pune":
+        console.log("MH")
+        break
+    case "jaipur":
+        console.log("RJ")
+        break
+    case "banglore":
+        console.log("KA")
+        break
+    default:
+        console.log('Incorrect cityName')
 }
 
-let chinmay = new Son("manohar","deshpane","shirish","chinmay")
-chinmay.displayFname()
-chinmay.displayGname()
-chinmay.displaySname()
+switch(city3){
+    case "pune":
+    case "nagpur":
+        console.log("MH")
+        break
+    case "jaipur":
+    case "udaipur":
+        console.log("RJ")
+        break
+    case "trivendum":
+    case "rameshwaram":
+        console.log("KERALA")
+        break
+    default:
+        console.log('Incorrect cityName')
+}
 
+let a = 15
+let b = 5
+let c = 2
+
+
+switch(true){
+    case a > b && a > c:
+        console.log("a is greater")
+        break
+    case b > a && b > c:
+        console.log("b is greater")
+        break
+    default:
+        console.log("c is greater")
+}
+
+
+
+// program 1
+
+for(let i = 1 ; i <= 3 ; i++){
+    console.log(i) 
+}
+
+// program 2
+// 1 to 5
+for(let i = 1 ; i <= 5 ; i++){
+    console.log(i)
+}
 
 // program 3
-
-
-class Mother {
-
-    constructor(fn,ln){
-        this.firstName = fn 
-        this.lastName = ln
-    }
-
-    displayMName(){
-        console.log(this.firstName + this.lastName)
-    }
+//5 to 1
+for(let i = 5 ; i >= 1 ; i--){ 
+    console.log(i) 
 }
 
-class Son extends Mother {
-    constructor(fn,ln,sn){
-        super(fn,ln)  
-        this.sname = sn
-    }
-    displaySName(){
-        console.log(this.sname + this.lastName)
-    }
+// program 4
+// table of 2 
+for(let i = 2 ; i <= 20 ; i = i + 2){ 
+    console.log(i)
 }
 
-class Daughter extends Mother {
+// program 5
 
-    constructor(fn,ln,dn){
-        super(fn,ln)  
-        this.dname = dn
-    }
-    displayDName(){
-        console.log(this.dname + this.lastName)
-    }
-
-
+for(let i = 1 ; i <= 10 ; i++){
+    console.log(i * 2)
 }
 
+// program 6 
 
-let chinmayS  = new Son("Kanchan","Deshpande","Chinmay")
-let Gauri  = new Daughter("Kanchan","Deshpande","Gauri")
+for(let i = 50 ; i >= 5 ; i = i - 5){
+    console.log(i)
+}
 
+// program 3 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+for(let i = 40 ; i >= 4 ; i = i - 4){
+    console.log(i)
+}

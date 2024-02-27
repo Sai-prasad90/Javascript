@@ -1,103 +1,65 @@
-
-// number as parameter and number as  return type 
-
-function add(x,y){
-    return x + y
-}
-let q1 = add(12,14)
+//arya
+let names = ["sai", "soham", 'shreya', "gauri", "chetan"]
+console.log(names[3])
+console.log(names[2])
+//==
+let q1 = names.length
 console.log(q1)
-console.log(typeof q1)
 
-// string as parameter and string as return type 
-
-function greet(word){
-    return "good " + word
+for (let i = 0; i < 5; i++) {
+    console.log(i)
 }
-let q2  = greet("morning")
-console.log(q2)
 
-// boolean as parameter and boolean as return type 
-function canDrive(age,vehicleAvail){
-    if(age >= 18 && vehicleAvail ){
-        return true
+//==
+let animal = ["tiger", "dog", "cat", "kangaroo"]
+console.log(animal[0])
+console.log(animal.length)
+for (let i = 0; i < animal.length; i++) {
+    console.log(animal[i])
+}
+
+// ==
+let fruits = ["apple", "banana", "mango", "chikoo"]
+console.log(fruits[0])
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i])
+}
+
+// program 4
+// print reverse 
+// length - 1 is lst index
+for (let i = fruits.length - 1; i >= 0; i--) {
+    console.log(i)
+    console.log(fruits[i])
+}
+
+// ==
+let animals = ["cheetah", "elephant", "cat", "monkey", "mouse"]
+for (let i = 0; i < animal.length; i++) {
+
+    if (animals[i] == "cat") {
+        break
     }
-    else {
-        return false
-    } 
-}
-let q3 = canDrive(18,true)
-console.log(q3)
-
-// array as parameter and array as return type 
-let cities = ["pune","mumbai","banglore"]
-
-function addCity(lst,ele){
-    lst.push(ele)
-    return lst
-}
-let q4 = addCity(cities,"wardha")
-console.log(q4)
-
-// obj as parameter and obj as return type 
-
-let info =  {
-    firstName:"chinmay",
-    lastName:"deshpande"
-}
-// dot notation and bracket notation 
-function addLanguage(obj,lang){
-    obj.language = lang
-    return obj
-}
-let q5 = addLanguage(info, "marathi")
-console.log(q5)
-
-
-// set as parameter and set as return type 
-
-
-
-
-// map as parameter and map as return type 
-
-
-// function as parameter and function as return 
-
-let x  = 10 
-console.log(x)
-
-let add = function(x,y){
-    return x + y
+    console.log(animals[i])
 }
 
-function addition(fn,x,y){
+let flowers = ["rose", "lily", "jasmine", "sunflower"]
+for (let i = 0; i < flowers.length; i++) {
 
-    // let x = 12
-    // let y = 4
-    // let fn = function(x,y){
-    //return x + y
-//}
-    let q7 = fn(x,y)
-    return q7
+
+    if (flowers[i] == "jasmine") {
+        continue
+    }
+    console.log(flowers[i])
 }
-let q8 = addition(add,12,4)
-console.log(q8)
 
-// rough
-//console.log(add)
-// // calling the function 
-// let q6 = add(23,4)
-// console.log(q6)
+//===
+let country = ["india", "japan", "us", "russia"]
+console.log(country)
+let y = 0
+while (y < country.length) {
 
-// // printing the function 
-// console.log(add)
+    console.log(country[y])
+    y = y + 1
 
-
-// function as return type from another function
-// 8, 8:30 pm,9:00pm
-
-
-
-
-
-
+}

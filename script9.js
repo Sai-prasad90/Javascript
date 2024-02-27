@@ -1,126 +1,55 @@
-//44
+// push //add to last
+// let names = ["sai","sam","ram","sumit"]
+// let a = names.push("baldev")
+// console.log(a) //5
+// console.log(names) 
 
-// // lexical scope 
+// unshift //add to first
+// let names = ["sai","sam","ram","sumit"]
+// let b = names.unshift('ram')
+// console.log(names) 
 
-// function addB(){
-//     let x = 10 
-//     let y  = 5
-//     console.log(x+y)
-//     function addC(){
-//         let s = 10 
-//         let t = 5
-       
-//         console.log(q1)
-//         console.log(q1)
-//         function addE(){
-//             let q1 = 7
-//             console.log(x+y+s+t)
-//         }
+// // pop //remov last
+// let names = ["sai","sam","ram","sumit"]
+// let c = names.pop()
+// console.log(c)
+// console.log(names)
 
-//         addE()
-//     }
-//     addC()
-// }
-// addB()
+// // shift  //remove first
+// let animals = ["zebra","lion","elephant","cheetah"]
+// let d = animals.shift()
+// console.log(d)
+// console.log(animals)
 
+// // indexOf
+// let animals = ["zebra","lion","elephant","cheetah"]
+// let e  = animals.indexOf('lion')
+// console.log(e)
 
-// program 1 
-// Lexical scope 
-// function addA(){
-//     let a = 10 
-//     let b = 5 
-//     console.log(a+b)
-//     function addB(){
-//         let s = 9 
-//         let t = 6
-//         console.log(a+b)
-//         console.log(s+t)
-//         function addC(){
-//             console.log(s+t+a+b)
-//         }
+// // includes //return boolean
+// let animals = ["zebra","lion","elephant","cheetah"]
+// let f = animals.includes('cheetah')
+// console.log(f)
 
-//         addC()
-//     }
-//     addB()
-// }
-// addA()
-
-// program 2 
-// function addE(){
-//     let x = 10 
-//     let y = 5 
-//     return x + y 
-//     console.log("hello")
-// }
-// let q2 = addE()
-// console.log(q2)
+// // reverse
+// let cities = ["mumbai","cheennai","pune","ahemdabad","jaipur"]
+// let i = cities.reverse()
+// console.log(i)
 
 
-// program 3  // closures 
+// // at
+// let cities = ["mumbai","cheennai","pune","ahemdabad","jaipur"]
+// let j = cities.at(3)
+// console.log(j)
 
-// function  addF(){
-//     let a = 10 
-//     let b = 5 
-//     return function(){
-//         console.log(a+b)
-//     }
-// }
-
-// let q3 = addF()
-// console.log(q3)
+// // // concat
+// let a = [11,22,33]
+// let b = [44,55,66]
+// let k =  a.concat(b)
+// console.log(k)
 
 
-// function declaration 
-function addE(x,y){
-    return x + y
-}
-let q4 = addE(12,4)
-console.log(q4)
-
-// function expression
-let addFa  = function(x,y){
-    return x + y
-}
-let q5 = addFa(2,1)
-console.log(q5)
-console.log(addFa)
-
-// arrow function 
-let addG  = (x,y)=>{
-    return x + y
-}
-let q6 = addG(2,1)
-console.log(q6)
-console.log(addG)
-
-
-// function addJ(){
-//     return 7 + 3
-// }
-// addJ()
-
-// let addH = function(){
-//     return 9 + 7
-// }
-
-// let addN = ()=>{
-//     console.log('hello')
-// }
-
-
-
-//program 3  // closures 
-
-function  addF(){
-    let a = 10 
-    let b = 5 
-    return function(){
-        return a + b
-    }
-}
-let q3 = addF()
-// let q3 = function(){
-//     return a + b
-// }
-let q33 = q3()
-console.log(q33)
+// // join
+// let info  = ["01saiprasad","gmail.com"]
+// let x = info.join('@')
+// console.log(x)
